@@ -100,7 +100,7 @@ st.markdown(
 st.markdown(
     """
     <div class="title-container">
-        <p class="big-font">Reporte de estudio de seguimiento a los procesos de conocimiento y apropiación del plan y programas de estudio 2022</p>
+        <p class="big-font">Resultados del estudio de seguimiento a los procesos de conocimiento y apropiación del plan y programas de estudio 2022</p>
     </div>
     """,
     unsafe_allow_html=True
