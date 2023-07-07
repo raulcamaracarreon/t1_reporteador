@@ -391,7 +391,7 @@ if password == 't1mejoredu2023':
             x, y = p.get_xy() 
             ax.text(x + width / 2, y + height / 2, '{:.0f}%'.format(height), ha='center', va='center', fontsize=9)
 
-    plt.title(titulo_grafico, fontsize=7)
+    plt.title(titulo_grafico, fontsize=9)
     plt.ylabel('Porcentaje')
     plt.xlabel('Opciones')
 
