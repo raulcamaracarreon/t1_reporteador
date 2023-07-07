@@ -3,6 +3,19 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
+from streamlit_credentials import st_credentials
+
+def check_credentials(password):
+    correct_password = "mi_contraseña_secreta"
+    if password == correct_password:
+        return True
+    else:
+        return False
+
+# Solicitar credenciales al usuario
+st_credentials(check_credentials, "Ingrese la contraseña:")
+
+
 password = st.text_input("Ingrese la contraseña", type="password")
 
 if password == 'contraseña_correcta':
