@@ -13,12 +13,8 @@ def check_credentials(password):
         return False
 
 # Solicitar credenciales al usuario
-st_credentials(check_credentials, "Ingrese la contraseña:")
+if st_credentials(check_credentials, "Ingrese la contraseña:"):
 
-
-password = st.text_input("Ingrese la contraseña", type="password")
-
-if password == 'contraseña_correcta':
     st.set_page_config(page_title="T1 Reporteador Mejoredu", page_icon=":bar_chart:", layout='centered', initial_sidebar_state='auto')
 
     # Carga los datos de un reactivo específico de una figura específica
