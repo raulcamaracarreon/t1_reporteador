@@ -445,6 +445,6 @@ if password == 't1mejoredu2023':
     with st.sidebar.expander("Mostrar instrucciones", expanded=False):
         st.markdown("**Instrucciones:**")
         st.write("Seleccione en las listas desplegables de la barra lateral la figura educativa y su nivel, el reactivo, el inciso del reactivo y el dato de identificación para mostrar la tabla y la gráfica de las variables seleccionadas para mostrar los resultados del Estudio de Seguimiento a los procesos de conocimiento y apropiación del plan y programas de estudio 2022. No importa el orden en el cual seleccione las cajas.")
-         st.write("Una vez que haya seleccionado los campos de su elección, en la pantalla de resultados podrá ver: 1. Una tabla con los resultados de los campos seleccionados. 2. La gráfica correspondiente, y 3. La nomenclatura de los valores de la gráfica.") 
+        st.write("Una vez que haya seleccionado los campos de su elección, en la pantalla de resultados podrá ver: 1. Una tabla con los resultados de los campos seleccionados. 2. La gráfica correspondiente, y 3. La nomenclatura de los valores de la gráfica.") 
 else:
     st.error("La contraseña ingresada es incorrecta.")
