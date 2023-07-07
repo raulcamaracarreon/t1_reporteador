@@ -366,7 +366,7 @@ if password == 't1mejoredu2023':
     nuevo_df = nuevo_df.applymap(lambda x: f'{x:.0f}%')
 
     # Muestra el título antes del DataFrame
-    st.markdown(f'<div style="font-size:12px"><b>{titulo_grafico}</b></div>', unsafe_allow_html=True)
+    st.markdown(f'<div style="font-size:16px"><b>{titulo_grafico}</b></div>', unsafe_allow_html=True)
 
     # Muestra el nuevo DataFrame
     st.write(nuevo_df)
@@ -389,7 +389,7 @@ if password == 't1mejoredu2023':
         for p in ax.patches:
             width, height = p.get_width(), p.get_height()
             x, y = p.get_xy() 
-            ax.text(x + width / 2, y + height / 2, '{:.0f}%'.format(height), ha='center', va='center', fontsize=7)
+            ax.text(x + width / 2, y + height / 2, '{:.0f}%'.format(height), ha='center', va='center', fontsize=9)
 
     plt.title(titulo_grafico, fontsize=7)
     plt.ylabel('Porcentaje')
