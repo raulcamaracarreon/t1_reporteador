@@ -389,7 +389,7 @@ if password == 't1mejoredu2023':
         for p in ax.patches:
             width, height = p.get_width(), p.get_height()
             x, y = p.get_xy() 
-            ax.text(x + width / 2, y + height / 2, '{:.0f}%'.format(height), ha='center', va='center', fontsize=9)
+            ax.text(x + width / 2, y + height / 2, '{:.0f}%'.format(height), ha='center', va='center', fontsize=7)
 
     plt.title(titulo_grafico, fontsize=9)
     plt.ylabel('Porcentaje')
