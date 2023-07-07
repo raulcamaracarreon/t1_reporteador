@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
-password = st.secrets["general"]["password"]  # Esto asignará "contraseña" a password
+password = st.secrets["general"]["t1mejoredu2023"]  # Esto asignará "contraseña" a password
 password_input = st.text_input("Ingresa la contraseña", type="password")
 
 if password_input == password:  # Si el usuario ingresó "contraseña", accederá a la aplicación
