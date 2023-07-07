@@ -5,17 +5,6 @@ import matplotlib.ticker as ticker
 
 st.set_page_config(page_title="T1 Reporteador Mejoredu", page_icon=":bar_chart:", layout='centered', initial_sidebar_state='auto')
 
-password = st.secrets["general"]["password"]  # Esto asignará "t1mejoredu2023" a password
-password_input = st.text_input("Ingresa la contraseña", type="password")
-
-if password_input == password:  # Si el usuario ingresó "t1mejoredu2023", accederá a la aplicación
-    st.write("Contraseña correcta. Ahora estás en la aplicación.")
-else:
-    st.write("Contraseña incorrecta. Por favor, inténtalo de nuevo.")
-
-
-
-
 # Carga los datos de un reactivo específico de una figura específica
 def cargar_datos_reactivo(figura, reactivo):
     # Nombre del archivo csv
