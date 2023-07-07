@@ -3,6 +3,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
+password = st.text_input("Ingrese la contraseña", type="password")
+
+if password == 'contraseña_correcta':
+    # El resto de tu aplicación va aquí
+else:
+    st.error("La contraseña ingresada es incorrecta.")
+
 st.set_page_config(page_title="T1 Reporteador Mejoredu", page_icon=":bar_chart:", layout='centered', initial_sidebar_state='auto')
 
 # Carga los datos de un reactivo específico de una figura específica
