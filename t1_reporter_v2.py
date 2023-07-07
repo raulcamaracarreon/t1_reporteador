@@ -3,13 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
-password = "tu_contraseña_aquí"  # Esto no es seguro
-password_input = st.text_input("Ingresa la contraseña", type="password")
-
-if password_input == password:
-    st.write("Contraseña correcta. Ahora estás en la aplicación.")
-else:
-    st.write("Contraseña incorrecta. Por favor, inténtalo de nuevo.")
 
 st.set_page_config(page_title="T1 Reporteador Mejoredu", page_icon=":bar_chart:", layout='centered', initial_sidebar_state='auto')
 
