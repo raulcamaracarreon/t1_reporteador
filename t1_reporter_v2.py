@@ -6,11 +6,7 @@ import matplotlib.ticker as ticker
 password = st.text_input("Ingrese la contraseña", type="password")
 
 if password == 'contraseña_correcta':
-    # El resto de tu aplicación va aquí
-else:
-    st.error("La contraseña ingresada es incorrecta.")
-
-st.set_page_config(page_title="T1 Reporteador Mejoredu", page_icon=":bar_chart:", layout='centered', initial_sidebar_state='auto')
+    st.set_page_config(page_title="T1 Reporteador Mejoredu", page_icon=":bar_chart:", layout='centered', initial_sidebar_state='auto')
 
 # Carga los datos de un reactivo específico de una figura específica
 def cargar_datos_reactivo(figura, reactivo):
@@ -450,3 +446,7 @@ st.pyplot(fig_leg) # Este va a mostrar la leyenda limpia en una figura separada
 with st.sidebar.expander("Mostrar instrucciones", expanded=False):
     st.markdown("**Instrucciones:**")
     st.write("Seleccione en las listas desplegables de la barra lateral la figura educativa y su nivel, el reactivo, el inciso del reactivo y el dato de identificación para mostrar la tabla y la gráfica de las variables seleccionadas para mostrar los resultados del Estudio de Seguimiento a los procesos de conocimiento y apropiación del plan y programas de estudio 2022. No importa el orden en el cual seleccione las cajas.")
+
+else:
+    st.error("La contraseña ingresada es incorrecta.")
+
