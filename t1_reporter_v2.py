@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
-password = st.secrets["password"]  # Almacena tu contraseña en el archivo secrets.toml
+password = "tu_contraseña_aquí"  # Esto no es seguro
 password_input = st.text_input("Ingresa la contraseña", type="password")
 
 if password_input == password:
