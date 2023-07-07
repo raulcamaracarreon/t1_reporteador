@@ -3,6 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
+st.set_page_config(page_title="T1 Reporteador Mejoredu", page_icon=":bar_chart:", layout='centered', initial_sidebar_state='auto')
+
 password = st.secrets["general"]["password"]  # Esto asignará "t1mejoredu2023" a password
 password_input = st.text_input("Ingresa la contraseña", type="password")
 
@@ -12,7 +14,7 @@ else:
     st.write("Contraseña incorrecta. Por favor, inténtalo de nuevo.")
 
 
-st.set_page_config(page_title="T1 Reporteador Mejoredu", page_icon=":bar_chart:", layout='centered', initial_sidebar_state='auto')
+
 
 # Carga los datos de un reactivo específico de una figura específica
 def cargar_datos_reactivo(figura, reactivo):
